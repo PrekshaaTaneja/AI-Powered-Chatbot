@@ -56,7 +56,7 @@ const ChatPage = () => {
     setMessages([]);
 
     const res = await axios.get(
-      `http://localhost:5000/api/history/messages/${id}`
+      `https://ai-powered-chatbot-2d05.onrender.com/api/history/messages/${id}`
     );
 
     setMessages(res.data);

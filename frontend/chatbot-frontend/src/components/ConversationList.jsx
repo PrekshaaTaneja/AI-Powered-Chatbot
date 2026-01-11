@@ -7,7 +7,7 @@ const ConversationList = ({ onSelect }) => {
 
   const fetchConversations = async () => {
     const res = await axios.get(
-      "http://localhost:5000/api/history/conversations"
+      "https://ai-powered-chatbot-2d05.onrender.com/api/history/conversations"
     );
     setConversations(res.data);
   };
@@ -19,7 +19,7 @@ const ConversationList = ({ onSelect }) => {
   // ✅ Create new conversation ONLY on button click
   const handleNewConversation = async () => {
     const res = await axios.post(
-      "http://localhost:5000/api/chat/start"
+      "https://ai-powered-chatbot-2d05.onrender.com/api/chat/start"
     );
 
     const newConversationId = res.data.conversationId;
