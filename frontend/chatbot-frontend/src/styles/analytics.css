@@ -1,0 +1,33 @@
+.analytics-page {
+  padding: 24px;
+  color: #e5e7eb;
+}
+
+.analytics-page h2 {
+  margin-bottom: 20px;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background-color: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.card h4 {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 26px;
+  font-weight: bold;
+  color: #e5e7eb;
+}

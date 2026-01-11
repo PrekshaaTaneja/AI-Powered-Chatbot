@@ -1,0 +1,75 @@
+# =========================
+# Node / NPM
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# Build Outputs
+# =========================
+dist/
+build/
+.out/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# OS / Editor Files
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# Coverage / Testing
+# =========================
+coverage/
+
+# =========================
+# Database / Local Data
+# =========================
+*.sqlite
+*.db
+dump/
+mongo_dump/
+
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
+
+# =========================
+# Frontend (Vite / React)
+# =========================
+frontend/node_modules/
+frontend/dist/
+
+# =========================
+# Backend
+# =========================
+backend/node_modules/
+
+# =========================
+# API Keys / Secrets
+# =========================
+*.pem
+*.key

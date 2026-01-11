@@ -1,0 +1,59 @@
+/* ROOT APP CONTAINER */
+.app-root {
+  height: 100vh;                 /* 🔴 Single source of truth */
+  display: flex;
+  flex-direction: column;
+  background-color: #0f172a;
+}
+
+/* TOP BAR */
+.topbar {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #1e293b;
+  background-color: #020617;
+  color: #e5e7eb;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.topbar-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.topbar-actions button {
+  background: transparent;
+  border: 1px solid #1e293b;
+  color: #e5e7eb;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.topbar-actions button.active {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+/* MAIN LAYOUT BELOW TOPBAR */
+.app-layout {
+  flex: 1;              /* 🔴 Takes remaining height */
+  display: flex;
+  min-height: 0;        /* 🔴 CRITICAL for scroll */
+}
+
+.chat-panel {
+  flex: 1;          /* 🔴 THIS makes it fill remaining width */
+  min-width: 0;     /* 🔴 REQUIRED for flex children */
+}
